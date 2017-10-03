@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_7b89085930da4234a4fc7d491d450733 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7b89085930da4234a4fc7d491d450733" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_7b89085930da4234a4fc7d491d450733 = L.map(
+                                  'map_7b89085930da4234a4fc7d491d450733',
+                                  {center: [50.82253,-0.137163],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_18888380ee014f6b896d8b44ae401729 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_7b89085930da4234a4fc7d491d450733);
+        
+    
+            var feature_group_0a7a96253eab4559bf507103444c6f8b = L.featureGroup(
+                ).addTo(map_7b89085930da4234a4fc7d491d450733);
+        
+    
+
+            var marker_07a5c4d6ef194fbd873fbaa1770c8592 = L.marker(
+                [50.816856,-0.136738],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_0a7a96253eab4559bf507103444c6f8b);
+            
+    
+
+                var icon_25ae95c3af4a435b80a5d483596cdfad = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_07a5c4d6ef194fbd873fbaa1770c8592.setIcon(icon_25ae95c3af4a435b80a5d483596cdfad);
+            
+    
+            var popup_6e04d84a8f5f4166a31f3572ff46f810 = L.popup({maxWidth: '300'});
+
+            
+                var html_e555689a87c04202baf87a746105c9a6 = $('<div id="html_e555689a87c04202baf87a746105c9a6" style="width: 100.0%; height: 100.0%;">Brighton Pier</div>')[0];
+                popup_6e04d84a8f5f4166a31f3572ff46f810.setContent(html_e555689a87c04202baf87a746105c9a6);
+            
+
+            marker_07a5c4d6ef194fbd873fbaa1770c8592.bindPopup(popup_6e04d84a8f5f4166a31f3572ff46f810);
+
+            
+        
+</script>
